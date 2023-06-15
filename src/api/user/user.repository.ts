@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -12,7 +11,6 @@ export class UserRepository {
     private readonly userRepository: Repository<User>,
   ) {}
 
-  //   quando criar  ainterface da entity subistituir o any por ela
   store(body: User): Observable<User> {
     return from(this.userRepository.save(body));
   }

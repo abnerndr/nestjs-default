@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
 import { Column, Entity, BaseEntity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('user')
+@Entity('users')
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string;
